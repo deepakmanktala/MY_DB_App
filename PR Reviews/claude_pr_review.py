@@ -4,7 +4,7 @@ Claude PR Review Script for Bitbucket Server
 Fetches PR diff and posts an AI-generated review as a comment.
 
 Required Environment Variables:
-  BITBUCKET_URL       - Base URL e.g. https://bitbucket.verifone.com:8443
+  BITBUCKET_URL       - Base URL e.g. https://bitbucket.yourcompany.com:8443
   BITBUCKET_TOKEN     - Personal Access Token (store as a secured pipeline variable)
   ANTHROPIC_API_KEY   - Anthropic API key (store as a secured pipeline variable)
   BITBUCKET_PROJECT   - Project key e.g. SCPS
