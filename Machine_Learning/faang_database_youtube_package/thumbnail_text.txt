@@ -1,0 +1,8 @@
+
+FAANG Database Designs
+25 Databases Explained
+
+Alternative lines:
+Redis vs Mongo vs Cassandra
+How Big Tech Picks Databases
+System Design Database Map

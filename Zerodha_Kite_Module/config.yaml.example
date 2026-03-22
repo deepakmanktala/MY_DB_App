@@ -1,0 +1,35 @@
+kite:
+  api_key: "YOUR_KITE_API_KEY"
+  access_token: "YOUR_ACCESS_TOKEN"
+  user_id: "YOUR_USER_ID"
+
+instrument:
+  exchange: "NSE"
+  tradingsymbol: "INFY"
+  quantity: 1
+  product: "CNC"            # CNC / MIS / NRML (as supported for your instrument)
+  order_type: "LIMIT"       # MARKET / LIMIT / SL / SL-M depending on workflow
+  transaction_type: "BUY"   # BUY / SELL
+  variety: "regular"
+  validity: "DAY"
+  price: 1550.00            # required for LIMIT
+  trigger_price: null       # for SL / trigger flows
+
+risk:
+  mode: "paper"             # change to live only after testing
+  max_order_value: 100000
+  max_daily_loss: 5000
+  max_position_qty: 10
+  max_trades_per_day: 5
+  dry_run_exit_orders: false
+  require_limit_price_for_entry: true
+  square_off_on_shutdown: false
+
+strategy:
+  entry_mode: "manual"      # manual | breakout_ltp
+  entry_above_ltp: null     # e.g. 1555.00 for breakout entry
+  target_price: 1575.00
+  stop_loss_price: 1535.00
+  trailing_sl_points: null  # e.g. 5.0
+  poll_interval_seconds: 1.0
+  use_websocket_ticks: true

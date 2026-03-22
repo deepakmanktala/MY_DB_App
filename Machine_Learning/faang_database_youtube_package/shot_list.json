@@ -1,0 +1,133 @@
+{
+  "project_title": "FAANG Database Designs",
+  "aspect_ratio": "16:9",
+  "estimated_runtime_sec": 605,
+  "scenes": [
+    {
+      "scene": 1,
+      "title": "Hook",
+      "duration_sec": 20,
+      "on_screen_text": "FAANG Database Architecture",
+      "visual": "Fast-moving network/global internet animation, server racks, database icons, big-brand style motion graphics.",
+      "voiceover": "Ever wondered what databases power companies like Google, Amazon, and Netflix? These platforms serve billions of users and store huge amounts of data. And the key insight is this: they do not rely on one database. They use multiple specialized databases working together.",
+      "asset_keywords": "global network, cloud architecture, data center, databases, digital world"
+    },
+    {
+      "scene": 2,
+      "title": "Why one database is not enough",
+      "duration_sec": 25,
+      "on_screen_text": "One database cannot do everything",
+      "visual": "Single overloaded database icon with lines coming from search, analytics, transactions, cache, graph, streaming.",
+      "voiceover": "A single database cannot efficiently handle every workload: billions of reads, massive writes, real-time analytics, search, graph traversal, and strict transactions. That is why hyperscale systems use the right database for the right job.",
+      "asset_keywords": "overloaded database, scaling bottleneck, system design"
+    },
+    {
+      "scene": 3,
+      "title": "Polyglot persistence",
+      "duration_sec": 30,
+      "on_screen_text": "Polyglot Persistence",
+      "visual": "Six-category layout: key-value, document, graph, wide-column, relational, analytics warehouse.",
+      "voiceover": "This approach is called polyglot persistence. It means using different database types for different access patterns. In this video, we will map the major database categories to real tools used in large systems.",
+      "asset_keywords": "polyglot persistence, database categories infographic"
+    },
+    {
+      "scene": 4,
+      "title": "Key-value databases",
+      "duration_sec": 50,
+      "on_screen_text": "Key-Value: Redis, DynamoDB, Memcached, Aerospike",
+      "visual": "Cache layer between app and DB, session tokens, counters, TTL, feature flags.",
+      "voiceover": "First: key-value databases. These are built for very fast lookups by key. Typical examples are Redis, DynamoDB, Memcached, and Aerospike. They are ideal for caching, session storage, rate limiting, counters, and feature flags. The strength is speed and simplicity. The tradeoff is limited query flexibility.",
+      "asset_keywords": "redis cache, key value store, sessions, rate limiting, counters"
+    },
+    {
+      "scene": 5,
+      "title": "Document databases",
+      "duration_sec": 50,
+      "on_screen_text": "Document: MongoDB, Cosmos DB, Couchbase, Firestore",
+      "visual": "JSON documents floating with nested objects like user profile, catalog item, order snapshot.",
+      "voiceover": "Next: document databases. These store flexible JSON-like records and work well when the schema changes often. Examples include MongoDB, Cosmos DB, Couchbase, Firestore, and DocumentDB. They are commonly used for user profiles, catalogs, content systems, and service-owned application data.",
+      "asset_keywords": "json document database, mongodb, document store, app backend"
+    },
+    {
+      "scene": 6,
+      "title": "Wide-column databases",
+      "duration_sec": 55,
+      "on_screen_text": "Wide-Column: Cassandra, Bigtable, HBase, ScyllaDB",
+      "visual": "Large distributed cluster receiving huge write streams from events, telemetry, chat messages.",
+      "voiceover": "Wide-column databases are designed for huge scale and very high write throughput. Examples include Cassandra, Bigtable, HBase, ScyllaDB, and Amazon Keyspaces. These are used for event logs, telemetry, time-series style workloads, large messaging platforms, and globally distributed storage patterns.",
+      "asset_keywords": "cassandra cluster, telemetry, event stream, distributed database"
+    },
+    {
+      "scene": 7,
+      "title": "Graph databases",
+      "duration_sec": 45,
+      "on_screen_text": "Graph: Neo4j, Neptune, TigerGraph",
+      "visual": "Nodes and edges for users, devices, cards, recommendations, fraud rings.",
+      "voiceover": "Graph databases shine when relationships are the core query pattern. Think recommendations, social graphs, fraud detection, knowledge graphs, and identity links. Popular options include Neo4j, Amazon Neptune, TigerGraph, JanusGraph, and ArangoDB.",
+      "asset_keywords": "graph database, recommendation engine, fraud detection graph"
+    },
+    {
+      "scene": 8,
+      "title": "Relational databases",
+      "duration_sec": 55,
+      "on_screen_text": "Relational: PostgreSQL, MySQL, Oracle, SQL Server, Aurora",
+      "visual": "Transactions, ACID, tables with orders/payments/users, primary-replica diagram.",
+      "voiceover": "Relational databases still power many mission-critical systems. PostgreSQL, MySQL, Oracle, SQL Server, and Aurora are common choices for transactional workloads. Use them when consistency, joins, constraints, and ACID behavior matter, such as payments, orders, billing, and financial records.",
+      "asset_keywords": "sql database, postgres, mysql, transactions, payments"
+    },
+    {
+      "scene": 9,
+      "title": "Analytics warehouses and lakehouse tools",
+      "duration_sec": 55,
+      "on_screen_text": "Analytics: Snowflake, BigQuery, Redshift, ClickHouse, Databricks",
+      "visual": "ETL pipeline from apps to warehouse with dashboards and ML models.",
+      "voiceover": "Analytics databases and lakehouse platforms are optimized for large aggregations and reporting. Examples include Snowflake, BigQuery, Redshift, ClickHouse, and Databricks. These power BI dashboards, product analytics, experimentation, observability analytics, and machine-learning data pipelines.",
+      "asset_keywords": "data warehouse, analytics, dashboards, bigquery, snowflake"
+    },
+    {
+      "scene": 10,
+      "title": "Search systems",
+      "duration_sec": 40,
+      "on_screen_text": "Search: Elasticsearch, OpenSearch, Solr, Typesense, Meilisearch",
+      "visual": "Search bar querying indexed content with filters and autocomplete.",
+      "voiceover": "Search workloads are usually handled by dedicated search engines, not by the transactional database. Elasticsearch, OpenSearch, Solr, Typesense, and Meilisearch are used for full-text search, filtering, autocomplete, log search, and ranking.",
+      "asset_keywords": "search index, elasticsearch, full text search, autocomplete"
+    },
+    {
+      "scene": 11,
+      "title": "FAANG-style combined architecture",
+      "duration_sec": 60,
+      "on_screen_text": "How they fit together",
+      "visual": "Users \u2192 CDN \u2192 API Gateway \u2192 Microservices \u2192 Cache \u2192 Primary DB \u2192 Search \u2192 Event stream \u2192 Analytics.",
+      "voiceover": "In a real large-scale architecture, these databases work together. A common pattern is: users hit the CDN and API gateway, microservices process requests, Redis handles cache, PostgreSQL or DynamoDB stores transactional data, Elasticsearch handles search, Kafka carries events, and Snowflake or BigQuery powers analytics. This layered approach is why large systems scale.",
+      "asset_keywords": "microservices architecture, redis postgres elasticsearch kafka snowflake"
+    },
+    {
+      "scene": 12,
+      "title": "Example stacks",
+      "duration_sec": 55,
+      "on_screen_text": "Example Production Stacks",
+      "visual": "Three side-by-side example stacks: ecommerce, streaming, payments.",
+      "voiceover": "For e-commerce, you might use Redis for carts and cache, PostgreSQL for orders, Elasticsearch for product search, Kafka for events, and Snowflake for analytics. For streaming, Redis for session data, Cassandra for event storage, search for catalogs, and a warehouse for recommendation analytics. For payments, relational databases often remain the source of truth, with Redis, graph, and analytics systems around them.",
+      "asset_keywords": "ecommerce architecture, streaming architecture, payments architecture"
+    },
+    {
+      "scene": 13,
+      "title": "Pros and cons summary",
+      "duration_sec": 45,
+      "on_screen_text": "Pick by access pattern, not hype",
+      "visual": "Matrix comparing speed, flexibility, relationships, analytics, consistency.",
+      "voiceover": "The right choice depends on access pattern. Use key-value for speed, document for flexibility, relational for consistency, wide-column for huge write scale, graph for relationships, and warehouses for analytics. The wrong choice is usually trying to force one database to do every job.",
+      "asset_keywords": "database decision matrix, pros cons, architecture comparison"
+    },
+    {
+      "scene": 14,
+      "title": "Outro",
+      "duration_sec": 20,
+      "on_screen_text": "Subscribe for more System Design",
+      "visual": "Clean outro card with channel branding and next-video teaser.",
+      "voiceover": "If you want more content on system design, large-scale architecture, and FAANG interview prep, subscribe. In the next video, break down how a real microservices request flows through a global distributed system.",
+      "asset_keywords": "youtube outro, system design channel, subscribe"
+    }
+  ]
+}

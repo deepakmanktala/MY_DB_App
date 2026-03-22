@@ -1,0 +1,6 @@
+scene,title,duration_sec,on_screen_text
+1,Hook,8,FAANG Database Designs
+2,Problem,8,One database cannot do everything
+3,Key-Value,8,"Redis, DynamoDB, Memcached"
+4,Document,8,"MongoDB, Cosmos DB, Couchbase"
+5,Outro,8,Subscribe for more system design

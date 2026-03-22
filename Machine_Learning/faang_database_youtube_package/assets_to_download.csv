@@ -1,0 +1,15 @@
+scene,title,search_query_1,search_query_2,asset_type,source_hint
+1,Hook,"global network, cloud architecture, data center, databases, digital world",hook infographic,stock video / image / icon / slide art,Pexels or Pixabay
+2,Why one database is not enough,"overloaded database, scaling bottleneck, system design",why one database is not enough infographic,stock video / image / icon / slide art,Pexels or Pixabay
+3,Polyglot persistence,"polyglot persistence, database categories infographic",polyglot persistence infographic,stock video / image / icon / slide art,Pexels or Pixabay
+4,Key-value databases,"redis cache, key value store, sessions, rate limiting, counters",key-value databases infographic,stock video / image / icon / slide art,Pexels or Pixabay
+5,Document databases,"json document database, mongodb, document store, app backend",document databases infographic,stock video / image / icon / slide art,Pexels or Pixabay
+6,Wide-column databases,"cassandra cluster, telemetry, event stream, distributed database",wide-column databases infographic,stock video / image / icon / slide art,Pexels or Pixabay
+7,Graph databases,"graph database, recommendation engine, fraud detection graph",graph databases infographic,stock video / image / icon / slide art,Pexels or Pixabay
+8,Relational databases,"sql database, postgres, mysql, transactions, payments",relational databases infographic,stock video / image / icon / slide art,Pexels or Pixabay
+9,Analytics warehouses and lakehouse tools,"data warehouse, analytics, dashboards, bigquery, snowflake",analytics warehouses and lakehouse tools infographic,stock video / image / icon / slide art,Pexels or Pixabay
+10,Search systems,"search index, elasticsearch, full text search, autocomplete",search systems infographic,stock video / image / icon / slide art,Pexels or Pixabay
+11,FAANG-style combined architecture,"microservices architecture, redis postgres elasticsearch kafka snowflake",faang-style combined architecture infographic,stock video / image / icon / slide art,Pexels or Pixabay
+12,Example stacks,"ecommerce architecture, streaming architecture, payments architecture",example stacks infographic,stock video / image / icon / slide art,Pexels or Pixabay
+13,Pros and cons summary,"database decision matrix, pros cons, architecture comparison",pros and cons summary infographic,stock video / image / icon / slide art,Pexels or Pixabay
+14,Outro,"youtube outro, system design channel, subscribe",outro infographic,stock video / image / icon / slide art,Pexels or Pixabay
