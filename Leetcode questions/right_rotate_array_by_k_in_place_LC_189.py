@@ -1,7 +1,7 @@
 nums = [1,2,3,4,5,5,56,67,54,54,67,6,654,5454,12]
 k = 3
 
-def rotate(self, nums: List[int], k: int) -> None:
+def rotate(nums,k):
     """
     # Do not return anything, modify nums in-place instead.
     # """
@@ -17,6 +17,9 @@ def rotate(self, nums: List[int], k: int) -> None:
     n = len(nums)
     r = k%n
     nums[:] = nums[n-r:] + nums[:n-r]
+    return nums
 
+print(rotate(nums,k))
 
+def rotate_without_slicing(nums,k):
 

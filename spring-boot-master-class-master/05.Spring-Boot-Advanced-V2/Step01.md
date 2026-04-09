@@ -1,0 +1,105 @@
+<!---
+Current Directory : /Users/rangakaranam/Ranga/git/00.courses/spring-boot-master-class/05.Spring-Boot-Advanced-V2
+-->
+
+## Complete Code Example
+
+
+### /pom.xml
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>4.0.0</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.in28minutes.springboot</groupId>
+	<artifactId>first-rest-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>first-rest-api</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>25</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	
+
+</project>
+```
+---
+
+### /src/main/java/com/in28minutes/springboot/firstrestapi/FirstRestApiApplication.java
+
+```java
+package com.in28minutes.springboot.firstrestapi;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FirstRestApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FirstRestApiApplication.class, args);
+	}
+
+}
+```
+---
+
+### /src/main/resources/application.properties
+
+```properties
+
+```
+---
+
+### /src/test/java/com/in28minutes/springboot/firstrestapi/FirstRestApiApplicationTests.java
+
+```java
+package com.in28minutes.springboot.firstrestapi;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class FirstRestApiApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
+```
+---
