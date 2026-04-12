@@ -1,3 +1,4 @@
+// Drizzle Kit config — points the migration CLI at the schema file and Neon database URL for generating and running migrations.
 import 'dotenv/config';
 import { defineConfig } from 'drizzle-kit';
 

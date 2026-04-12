@@ -1,3 +1,4 @@
+// Defines all Neon PostgreSQL table schemas using Drizzle ORM — single source of truth for DB structure and TypeScript types.
 import {
   pgTable,
   serial,
