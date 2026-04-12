@@ -1,5 +1,17 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Authentication | [Clerk](https://clerk.com) — user identity and session management. All database records are scoped to a `clerk_user_id` (e.g. `user_3CFJkRKMROlqhdcdBc5qfcQOo1J`) |
+| Database | [Neon](https://neon.tech) — serverless PostgreSQL. Hosts all app tables: `workouts`, `exercises`, `workout_exercises`, `sets` |
+| ORM | [Drizzle ORM](https://orm.drizzle.team) — type-safe SQL query builder and schema manager. Schema lives in `src/db/schema.ts`, DB client in `src/db/index.ts` |
+| UI Components | [shadcn/ui](https://ui.shadcn.com) — copy-paste React component library built on Radix UI and Tailwind CSS. Components live in `src/components/ui/` |
+
+### How user identity flows
+Clerk authenticates the user and provides a `userId`. This ID is stored as `clerk_user_id` on the `workouts` and `exercises` tables to scope all data per user — no separate `users` table is needed in the app database.
+
 ## Getting Started
 
 First, run the development server:

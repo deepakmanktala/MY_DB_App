@@ -1,0 +1,21 @@
+id,name,muscle_group,clerk_user_id,created_at
+1,Bench Press,Chest,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+2,Squat,Legs,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+3,Deadlift,Back,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+4,Overhead Press,Shoulders,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+5,Pull-Up,Back,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+6,Barbell Row,Back,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+7,Incline Dumbbell Press,Chest,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+8,Leg Press,Legs,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+9,Romanian Deadlift,Hamstrings,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+10,Lateral Raise,Shoulders,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+11,Bicep Curl,Biceps,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+12,Tricep Pushdown,Triceps,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+13,Face Pull,Rear Delts,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+14,Leg Curl,Hamstrings,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+15,Leg Extension,Quads,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+16,Calf Raise,Calves,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+17,Cable Fly,Chest,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+18,Hammer Curl,Biceps,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+19,Skull Crusher,Triceps,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
+20,Hip Thrust,Glutes,user_3CFJkRKMROlqhdcdBc5qfcQOo1J,2026-04-12T07:16:32.157Z
