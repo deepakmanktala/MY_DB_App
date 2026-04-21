@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.JobFinderApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#7c6af7</item>
+        <item name="colorPrimaryVariant">#5b4bd5</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">#4ade80</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+    </style>
+</resources>

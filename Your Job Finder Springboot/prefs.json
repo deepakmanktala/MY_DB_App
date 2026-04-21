@@ -1,0 +1,24 @@
+{
+  "roles": [
+    "TPM",
+    "Technical Program Manager",
+    "AI Engineer",
+    "Payments Engineer",
+    "EMV Engineer",
+    "Engineering Manager",
+    "QA ENgineer",
+    "Technical Manager",
+    "Python Developer",
+    "PoS",
+    "Micro Services"
+  ],
+  "region": "Asia / India / Singapore",
+  "date_label": "Last 1 week",
+  "concurrency": 2,
+  "dedup": true,
+  "html": true,
+  "csv": true,
+  "debug": false,
+  "outdir": "C:\\Users\\deepakm3\\Downloads\\My_Database_using_python\\My_Database_using_python\\Web Crawler",
+  "geometry": "1280x680+-78+54"
+}

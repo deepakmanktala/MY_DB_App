@@ -1,0 +1,41 @@
+<div class="job-list-panel">
+  <div class="filters">
+    <input [(ngModel)]="keyword" placeholder="Search keyword..." class="filter-input">
+    <input [(ngModel)]="region" placeholder="Region..." class="filter-input">
+    <input [(ngModel)]="source" placeholder="Source (LinkedIn, Indeed...)" class="filter-input">
+    <button (click)="onSearch()" class="btn-filter">Filter</button>
+    <span class="result-count">{{ totalElements }} jobs found</span>
+  </div>
+
+  <div *ngIf="loading" class="loading">Loading jobs...</div>
+
+  <div class="job-cards" *ngIf="!loading">
+    <div class="job-card" *ngFor="let job of jobs">
+      <div class="job-header">
+        <h3 class="job-title">
+          <a [href]="job.jobUrl" target="_blank">{{ job.title }}</a>
+        </h3>
+        <span class="source-badge">{{ job.source }}</span>
+      </div>
+      <p class="company">{{ job.company }}</p>
+      <p class="location">{{ job.location }}</p>
+      <p class="salary" *ngIf="job.salary">{{ job.salary }}</p>
+      <div class="meta">
+        <span>{{ job.region }}</span>
+        <span>Role: {{ job.roleMatched }}</span>
+        <span>{{ job.crawledAt | date:'short' }}</span>
+      </div>
+    </div>
+
+    <p *ngIf="jobs.length === 0" class="no-results">
+      No jobs found. Run a search to get started.
+    </p>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination" *ngIf="totalPages > 1">
+    <button (click)="onPageChange(currentPage - 1)" [disabled]="currentPage === 0">Prev</button>
+    <span>Page {{ currentPage + 1 }} of {{ totalPages }}</span>
+    <button (click)="onPageChange(currentPage + 1)" [disabled]="currentPage >= totalPages - 1">Next</button>
+  </div>
+</div>

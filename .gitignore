@@ -7,3 +7,38 @@ __pycache__/
 .idea/
 *.iml
 out/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Java/Maven build output
+target/
+*.class
+*.jar
+*.war
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+
+# Android build
+.gradle/
+build/
+local.properties
+*.apk
+*.aab
+
+# Secrets / env
+.env
+*.env.local
+
+# Claude Code internals
+.claude/
+.agents/
+skills-lock.json
+
+# Archives
+*.zip

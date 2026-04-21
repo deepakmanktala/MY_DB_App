@@ -1,0 +1,53 @@
+<div class="search-panel">
+  <h2>Your Job Finder</h2>
+  <p class="subtitle">by Deepak Manktala</p>
+
+  <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
+
+    <div class="form-group">
+      <label>Job Roles (one per line)</label>
+      <textarea [(ngModel)]="rolesInput" [ngModelOptions]="{standalone: true}"
+                rows="5" placeholder="TPM&#10;Engineering Manager&#10;AI Engineer"></textarea>
+      <div class="suggested-roles">
+        <span *ngFor="let role of suggestedRoles"
+              class="chip" (click)="addRole(role)">+ {{ role }}</span>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Region</label>
+        <select formControlName="region">
+          <option *ngFor="let r of regions" [value]="r">{{ r }}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Date Range</label>
+        <select formControlName="dateRange">
+          <option *ngFor="let d of dateRanges" [value]="d">{{ d }}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Concurrency</label>
+        <input type="number" formControlName="concurrency" min="1" max="10">
+      </div>
+
+      <div class="form-group checkbox">
+        <label>
+          <input type="checkbox" formControlName="dedup"> Deduplicate Results
+        </label>
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="isSearching" class="btn-search">
+      {{ isSearching ? 'Crawling...' : 'Find Jobs' }}
+    </button>
+  </form>
+
+  <div class="progress-log" *ngIf="progressLogs.length > 0">
+    <h4>Live Progress</h4>
+    <div class="log-entry" *ngFor="let log of progressLogs">{{ log }}</div>
+  </div>
+</div>

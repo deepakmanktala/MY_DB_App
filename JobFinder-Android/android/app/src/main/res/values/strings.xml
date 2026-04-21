@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Your Job Finder</string>
+    <string-array name="date_ranges">
+        <item>Last 1 day</item>
+        <item>Last 3 days</item>
+        <item>Last 1 week</item>
+        <item>Last 2 weeks</item>
+        <item>Last 30 days</item>
+    </string-array>
+</resources>
