@@ -1,0 +1,14 @@
+# Compiled Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Sensitive credentials — never commit these
+challenge.pem
+profile.json
+profile_backup_copy.json
+
+# IDE / editor artifacts (already tracked via .idea — keep those)
+
+# Claude Code internal state
+.claude/
